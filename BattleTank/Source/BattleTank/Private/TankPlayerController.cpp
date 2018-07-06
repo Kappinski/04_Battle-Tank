@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "TankPlayerController.h"
+#include "Tank.h"
 #include "Engine/World.h"
 #include "DrawDebugHelpers.h"
 
@@ -11,7 +12,7 @@ void ATankPlayerController::BeginPlay()
 	auto ControlledTank = GetControlledTank();
 	if (!ControlledTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("TankPlayerController not pessesing a tank"));
+		UE_LOG(LogTemp, Warning, TEXT("TankPlayerController not possesing a tank"));
 	}
 	else
 	{
